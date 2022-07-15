@@ -2,7 +2,7 @@ version: 2
 
 sources:
     - name: jaffle_shop
-      description: learning dbt
+      description: learning dbt by leveraging the code of a postgres app database.
       database: raw
       tables:
         - name: customers

@@ -2,8 +2,10 @@ version: 2
 
 models:
     - name: stg_customers
+      description: learn dbt documentation
       columns:
         - name: customer_id
+          description: field definition can go here as part of the documentation 
           tests:
             - unique
             - not_null
@@ -15,6 +17,7 @@ models:
             - unique
             - not_null
         - name: status
+          description: '{{ doc("order_status")}}'
           tests:
             - accepted_values:
                 values:
